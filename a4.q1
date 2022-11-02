@@ -1,0 +1,4 @@
+select player, salary
+from nba
+where salary=(select MAX(salary) from nba);
+

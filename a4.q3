@@ -1,0 +1,4 @@
+select player, COUNT(season_end), MIN(season_start)
+from nba
+group by player
+having COUNT(season_end) > 20;

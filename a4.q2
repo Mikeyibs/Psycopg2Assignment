@@ -1,0 +1,5 @@
+select player, COUNT(season_end)
+from nba
+where team='Philadelphia 76ers'
+group by player
+having COUNT(season_end) >= 5;
